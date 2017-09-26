@@ -110,7 +110,7 @@ def handell_data(datalist):
 def connect_mysql(mydic):
     global con
     global cur
-    con=pymysql.connect(host='127.0.0.1', port=3306, user='保密', password='保密', db='pythonsql',charset='utf8')
+    con=pymysql.connect(host='127.0.0.1', port=3306, user='root', password='915603', db='pythonsql',charset='utf8')
     cur=con.cursor()
     sql='TRUNCATE TABLE basktall'
     cur.execute(sql)
